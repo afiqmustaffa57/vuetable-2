@@ -136,9 +136,7 @@
                 :class="[css.detailRowClass]"
                 @click="onDetailRowClick(item, $event)"
               >
-                <td :colspan="countVisibleFields">
-                  <component :is="detailRowComponent" :row-data="item" :row-index="itemIndex"></component>
-                </td>
+                 <component :is="detailRowComponent" :row-data="item" :row-index="itemIndex"></component>
               </tr>
             </transition>
           </template>
